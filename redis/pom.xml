@@ -11,5 +11,13 @@
 
     <artifactId>redis</artifactId>
 
+    <dependencies>
+        <!-- jsp编译-->
+        <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+        <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>
