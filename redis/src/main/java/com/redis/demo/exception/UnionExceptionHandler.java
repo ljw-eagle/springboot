@@ -1,15 +1,21 @@
 package com.redis.demo.exception;
 
+import com.redis.demo.bean.Result;
 import lombok.extern.slf4j.Slf4j;
 import com.redis.demo.controller.EmployeeController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * 使用 @ControllerAdvice，不用任何的配置，
+ * 只要把这个类放在项目中，Spring能扫描到的地方。就可以实现全局异常的回调。
+ */
 @Slf4j
 @RestControllerAdvice
 public class UnionExceptionHandler {
@@ -41,10 +47,22 @@ public class UnionExceptionHandler {
      * @param ex
      * @return
      */
-//    @ExceptionHandler(RRException.class)
-//    public R apiExceptionHandler(RRException ex) {
-//        log.error("ApiException 异常抛出：{}", ex);
-//        return R.fail(ex);
-//    }
+    @ExceptionHandler(Exception.class)
+    public Result handleException(Exception e){
+        LOGGER.error(e.getMessage(), e);
+        return Result.error();
+    }
+
+    /**
+     * 自定义异常
+     */
+    @ExceptionHandler(RRException.class)
+    public Result handleRRException(RRException e){
+        Result r = new Result();
+        r.put("code", e.getCode());
+        r.put("msg", e.getMessage());
+        return r;
+    }
+
 
 }
