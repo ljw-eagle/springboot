@@ -2,6 +2,7 @@ package com.redis.demo.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -21,7 +22,7 @@ public class TestController {
 
     @RequestMapping("/demo1")
     @ResponseBody
-    @ResponseStatus
+    @ResponseStatus(value = HttpStatus.NOT_FOUND)
     public Object demo1() {
         int i = 1 / 0;
         return new Date();
