@@ -1,6 +1,7 @@
 package com.redis.demo.controller;
 
 import com.redis.demo.bean.Employee;
+import com.redis.demo.mapper.EmployeeMapper;
 import com.redis.demo.service.EmployeeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,8 @@ public class EmployeeController {
     private final static Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
     @Autowired
     private EmployeeService employeeService;
+    @Autowired
+    private EmployeeMapper employeeMapper;
 
     /**
      * http://localhost:8080/getName/1
@@ -68,6 +71,19 @@ public class EmployeeController {
     public void saveEmployee(@RequestBody Employee employee){
         employeeService.saveEmployee(employee);
     }
+
+    @RequestMapping("/getEmployeeByEid")
+    @ResponseBody
+    public Employee getEmployeeByEid(String id){
+        return employeeMapper.findEmployeeById(id);
+    }
+
+    @RequestMapping("/saveEmploye")
+    @ResponseBody
+    public void saveEmploye(@RequestBody Employee employee){
+         employeeMapper.saveEmploye(employee);
+    }
+
 
 
 }
