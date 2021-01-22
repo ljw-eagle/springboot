@@ -84,6 +84,12 @@ public class EmployeeController {
          employeeMapper.saveEmploye(employee);
     }
 
+    @RequestMapping("/batchInsertEmploye")
+    @ResponseBody
+    public void batchInsertEmploye(@RequestBody List<Employee> list){
+        employeeMapper.batchInsertEmploye(list);
+    }
+
 
 
 }
