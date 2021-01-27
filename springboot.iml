@@ -738,6 +738,104 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/activemq/activemq-pool/5.16.0/activemq-pool-5.16.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/activemq/activemq-jms-pool/5.16.0/activemq-jms-pool-5.16.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/commons/commons-pool2/2.9.0/commons-pool2-2.9.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/activemq/activemq-client/5.16.0/activemq-client-5.16.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/fusesource/hawtbuf/hawtbuf/1.11/hawtbuf-1.11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/springframework/boot/spring-boot-starter-activemq/2.4.1/spring-boot-starter-activemq-2.4.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/springframework/spring-jms/5.3.2/spring-jms-5.3.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/springframework/spring-messaging/5.3.2/spring-messaging-5.3.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/activemq/activemq-broker/5.16.0/activemq-broker-5.16.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/apache/activemq/activemq-openwire-legacy/5.16.0/activemq-openwire-legacy-5.16.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Program Files/java/maven/LocalWarehouse/jakarta/jms/jakarta.jms-api/2.0.3/jakarta.jms-api-2.0.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
           <root url="jar://D:/Program Files/java/maven/LocalWarehouse/org/springframework/boot/spring-boot-devtools/2.4.1/spring-boot-devtools-2.4.1.jar!/"/>
         </CLASSES>
       </library>
