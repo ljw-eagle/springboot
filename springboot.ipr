@@ -77,6 +77,8 @@
     <modules> 
       <module filepath="$PROJECT_DIR$/springboot.iml"/>
       <module filepath="$PROJECT_DIR$/redis/redis.iml"/>
+      <module filepath="$PROJECT_DIR$/gateway/gateway.iml"/>
+      <module filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml"/>
     </modules> 
   </component>  
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" assert-keyword="true" jdk-15="true"/>  
