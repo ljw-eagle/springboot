@@ -9,6 +9,8 @@
         <module name="redis" />
         <module name="eureka-server" />
         <module name="gateway" />
+        <module name="zookeeper" />
+        <module name="java" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,7 +18,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="java" options="-parameters" />
       <module name="redis" options="-parameters" />
+      <module name="zookeeper" options="-parameters" />
     </option>
   </component>
 </project>

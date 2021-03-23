@@ -12,6 +12,10 @@
     <artifactId>redis</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!-- jsp编译-->
         <dependency>
         <groupId>org.apache.tomcat.embed</groupId>

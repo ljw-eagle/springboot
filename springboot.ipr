@@ -79,6 +79,8 @@
       <module filepath="$PROJECT_DIR$/redis/redis.iml"/>
       <module filepath="$PROJECT_DIR$/gateway/gateway.iml"/>
       <module filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml"/>
+      <module filepath="$PROJECT_DIR$/zookeeper/zookeeper.iml"/>
+      <module filepath="$PROJECT_DIR$/java/java.iml"/>
     </modules> 
   </component>  
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" assert-keyword="true" jdk-15="true"/>  

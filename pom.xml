@@ -12,6 +12,8 @@
         <module>redis</module>
         <module>gateway</module>
         <module>eureka-server</module>
+        <module>zookeeper</module>
+        <module>java</module>
     </modules>
 
     <parent>
