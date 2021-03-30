@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.redis.demo.mapper.EmployeeMapper">
+
+    <select id="findEmployeeById" resultType="com.redis.demo.bean.Employee" parameterType="string">
+        select  eid,
+                ename,
+                salary,
+                deg
+        from employe where eid=#{eid}
+    </select>
+
+    <insert id="saveEmploye" parameterType="com.redis.demo.bean.Employee">
+        insert into employe(
+        ename,
+        salary,
+        deg)
+        values(
+        #{ename},
+        #{salary},
+        #{deg}
+        )
+    </insert>
+
+<!--    批量插入-->
+    <insert id="batchInsertEmploye" parameterType="java.util.List">
+        insert into employe(
+        ename,
+        salary,
+        deg)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (
+            #{item.ename},
+            #{item.salary},
+            #{item.deg}
+            )
+        </foreach>
+    </insert>
+
+</mapper>
